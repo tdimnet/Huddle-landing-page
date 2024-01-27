@@ -30,12 +30,12 @@ body {
 }
 
 .main-wrapper {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    max-width: 1200px;
+    padding-top: 40px;
     width: 90%;
+    max-width: 1600px;
 }
 
 .main-title img {
@@ -115,8 +115,14 @@ body {
         background-image: url("../images/bg-desktop.svg");
     }
 
+    .main-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
     .main-header {
-        margin-bottom: 72px;
+        margin-bottom: auto;
     }
 
     .main-title img {
@@ -130,6 +136,7 @@ body {
 
     .hero-img {
         margin-right: 48px;
+        width: 700px;
     }
 
     .section-title {
@@ -139,6 +146,11 @@ body {
 
     .main-section-texts {
         text-align: left;
+        max-width: 600px;
+    }
+
+    .main-footer {
+      margin-top: auto;
     }
 
     .icons-wrapper {
