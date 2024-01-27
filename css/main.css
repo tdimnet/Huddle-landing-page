@@ -1,0 +1,147 @@
+:root {
+    /* Descriptive color variables */
+    --studio: #674BAF;
+    --lavender-magenta: #E882E8;
+    --white: #FFF;
+
+    /* Font families */
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+
+    /* Desktop width */
+    --desktop-width: 1024px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--studio);
+    background-image: url("../images/bg-mobile.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+.main-wrapper {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.main-title img {
+    height: auto;
+    width: 120px;
+}
+
+.main-section {
+    margin-bottom: 72px;
+}
+
+.hero-img {
+    margin-bottom: 48px;
+}
+
+.main-section-texts {
+    font-family: var(--font-open-sans);
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--font-poppins);
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.description {
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.register-btn {
+    background-color: var(--white);
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    transition: .4s;
+    width: 200px;
+}
+
+.register-btn:hover {
+    background-color: var(--lavender-magenta);
+    color: var(--white);
+}
+
+.icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.icons-wrapper li {
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    margin-right: 16px;
+    transition: .4s;
+    width: 32px;
+}
+
+.icons-wrapper li:hover {
+    border-color: var(--lavender-magenta);
+    color: var(--lavender-magenta);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+    }
+
+    .main-header {
+        margin-bottom: 72px;
+    }
+
+    .main-title img {
+        height: auto;
+        width: 200px;
+    }
+
+    .main-section {
+        display: flex;
+    }
+
+    .hero-img {
+        margin-right: 48px;
+    }
+
+    .section-title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .main-section-texts {
+        text-align: left;
+    }
+
+    .icons-wrapper {
+        justify-content: flex-end;
+    }
+}
